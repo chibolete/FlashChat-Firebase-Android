@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "334540285762",
+    "firebase_url": "https://udemyflashchat-a1182.firebaseio.com",
+    "project_id": "udemyflashchat-a1182",
+    "storage_bucket": "udemyflashchat-a1182.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334540285762:android:b8bcc9a8226f46bda60adb",
+        "android_client_info": {
+          "package_name": "com.chibolete.flashchatnewfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334540285762-8ignk9l2qo07lkkbhhsuck0pvegqukaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBWfozvzIge_Lg7IqCy6iGb9FqlyYfu2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334540285762-8ignk9l2qo07lkkbhhsuck0pvegqukaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
