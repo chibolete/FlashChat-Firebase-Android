@@ -40,9 +40,11 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
                 if (id == R.integer.login || id == EditorInfo.IME_NULL) {
+                    Log.d("FlashChat", " onEditorAction Finished Edition");
                     attemptLogin();
                     return true;
                 }
+                Log.d("FlashChat", "onEditorAction false, id: "+id);
                 return false;
             }
         });
@@ -55,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
     // Executed when Sign in button pressed
     public void signInExistingUser(View v)   {
         // TODO: Call attemptLogin() here
+        attemptLogin();
 
     }
 
