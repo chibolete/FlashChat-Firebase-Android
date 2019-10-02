@@ -3,10 +3,14 @@ package com.chibolete.flashchatnewfirebase;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Display;
+import android.view.KeyEvent;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -36,9 +40,21 @@ public class MainChatActivity extends AppCompatActivity {
         mChatListView = (ListView) findViewById(R.id.chat_list_view);
 
         // TODO: Send the message when the "enter" button is pressed
-
+        mInputText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                sendMessage();
+                return true;
+            }
+        });
 
         // TODO: Add an OnClickListener to the sendButton to send a message
+        mSendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendMessage();
+            }
+        });
 
     }
 
@@ -56,7 +72,7 @@ public class MainChatActivity extends AppCompatActivity {
 
 
     private void sendMessage() {
-
+        Log.d("FlashChat", "sendMessage: " + mInputText.getText());
         // TODO: Grab the text the user typed in and push the message to Firebase
 
     }
